@@ -20,3 +20,11 @@ generated_text = pipe(prompt, max_length=50, num_return_sequences=1)
 
 # Print the generated text
 print(generated_text[0]['generated_text'])
+
+
+seed_tasks_path = "/home/ec2-user/EvolInstruct/converted_alpaca_20k.json"
+
+def load_instructions(file_path: str):
+    """Load JSON file in Evol Format"""
+    with open(file_path, "r") as json_file:
+        return json.load(json_file)

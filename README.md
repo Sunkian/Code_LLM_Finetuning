@@ -30,3 +30,9 @@ pip3 install -r requirements.txt
 
 The seed dataset can be found here : https://github.com/sahil280114/codealpaca/blob/master/data/code_alpaca_20k.json
 We will leverage CodeLlama-70B-Instruct (https://huggingface.co/codellama/CodeLlama-70b-Instruct-hf) to augment the real-life dataset code_alpaca_20k.
+
+Steps :
+
+1. Call a model from HuggingFace
+2. Do a simple inference with this model 
+3. Augment a dataset with the model
