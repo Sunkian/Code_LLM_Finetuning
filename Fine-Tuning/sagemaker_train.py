@@ -23,7 +23,8 @@ estimator = PyTorch(
         'model_name_or_path': 'Nondzu/Mistral-7B-codealpaca-lora',
         'train_file': '/home/ec2-user/EvolInstruct/alice/Instruction_Filters/ALL_COMBINED/FILTEREDevolved_codealpaca_v1codellamainst70B.jsonl',
     },
-    base_job_name='sagemaker-finetuning-codealpaca-alice'
+    base_job_name='sagemaker-finetuning-codealpaca-alice',
+    dependencies=['requirements.txt']
 )
 
 estimator.fit({'training': training_data_s3_path})

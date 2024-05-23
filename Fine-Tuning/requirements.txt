@@ -1,0 +1,9 @@
+pandas
+transformers
+datasets
+peft
+accelerate
+sentencepiece
+awscli
+boto3
+sagemaker
